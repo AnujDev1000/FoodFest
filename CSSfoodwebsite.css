@@ -1,0 +1,913 @@
+body
+{
+    padding: 0 0px;
+    margin: 0;
+    font-family: yu gothic;
+}
+header
+{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 2;
+}
+header .logo
+{
+    position: relative;
+    padding: 0 20px;
+    font-size: 1.7rem;
+}
+header .logo mark
+{
+    position: relative;
+    background-color: transparent;
+    color: lime;
+    font-family: cursive;
+}
+header .menu
+{
+    position: relative;
+    font-size: 1rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-between;
+    align-content: center;
+}
+header .cart span
+{
+    position: relative;
+    padding: 7px 20px;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 5px;
+}
+header .cart span i
+{
+    position: relative;
+    margin-right: 0px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+header .cart span mark
+{
+    position: relative;
+    padding: 0px 9px;
+    margin-right: 10px;
+    background-color: lime;
+    color: white;
+    border-radius: 50%;
+    font-size: .8rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+header .cart span .menubar
+{
+    position: relative;
+    font-size: 1.5rem;
+    display: none;
+}
+.menu2
+{
+    position: fixed;
+    height: 100%;
+    padding: 70px 90px 70px 10px;
+    margin-left: -100%;
+    background-color: white;
+    font-size: 1.1rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto auto auto auto auto auto;
+    justify-content: space-between;
+    align-content: flex-start;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+    transition-timing-function: ease-out;
+}
+.home
+{
+    position: relative;
+    width: 100%;
+    height: 625px;
+    background-color: rgb(2, 170, 86);
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+}
+.home .maincontent
+{
+    position: relative;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.home .maincontent h1
+{
+    position: relative;
+    margin: -20px 0;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.home .maincontent p
+{
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.home .maincontent button
+{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 126, 20);
+    color: white;
+    font-size: 1.1rem;
+}
+.home .imgbox
+{
+    position: relative;
+    height: 100%;
+}
+.home .imgbox img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+}
+.procesure
+{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-content: center;
+}
+.procesure h1
+{
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    display: grid;
+    grid-column: 1/5;
+}
+.procesure .card
+{
+    position: relative;
+    padding: 10px 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.procesure .card .iconbox
+{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    font-size: 1.9rem;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: red;
+}
+.procesure .card .iconbox i
+{
+    position: relative;
+}
+.procesure .card .iconbox span
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: red;
+    font-size: .9rem;
+    font-weight: bold;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 1px 1px 7px rgba(0,0,0,.7);
+}
+.procesure .card .iconbox svg
+{
+    position: absolute;
+    top: -35px;
+    left: 5px;
+    width: 110px;
+    fill: rgb(235, 235, 235);
+}
+.procesure .card h2
+{
+    position: relative;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.procesure .card p
+{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: grey;
+    text-align: center;
+}
+.extrablock1
+{
+    position: relative;
+    width: 100%;
+    height: 525px;
+    background-color: rgb(245, 245, 245);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+}
+.extrablock1 .info
+{
+    position: relative;
+    width: 450px;
+    display: grid;
+    align-content: flex-start;
+}
+.extrablock1 .info h1
+{
+    position: relative;
+    font-size: 2.4rem;
+    line-height: 45px;
+    margin: 0;
+}
+.extrablock1 .info p
+{
+    position: relative;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: grey;
+}
+.extrablock1 .info button
+{
+    position: relative;
+    width: 200px;
+    height: 50px;   
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 126, 20);
+    color: white;
+    font-size: 1.1rem;
+}
+.extrablock1 .imgbox
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    animation: animate 14s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+.extrablock1 .imgbox img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.ourmenu
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-content: center;
+}
+.ourmenu h1
+{
+    position: relative;
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    display: grid;
+    grid-column: 1/4;
+}
+.ourmenu p
+{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-align: center;
+    display: grid;
+    grid-column: 1/4;
+    color: grey;
+}
+.ourmenu .menucard
+{
+    position: relative;
+    padding-bottom: 60px;
+    width: 300px;
+    height: auto;
+    border: 1px solid rgb(190, 189, 189);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ourmenu .menucard .imgbox
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(49, 255, 118);
+    overflow: hidden;
+}
+.ourmenu .menucard .imgbox img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.ourmenu .menucard h2
+{
+    position: relative;
+    margin: 0;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.ourmenu .menucard .price
+{
+    position: relative;
+    width: 90%;
+    margin: 5px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+.ourmenu .menucard p
+{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+    color: grey;
+}
+.ourmenu .menucard .buttonbox
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.ourmenu .menucard .buttonbox button
+{
+    position: relative;
+    width: 150px;
+    height: 35px;
+    margin: 10px auto;
+    font-size: 1rem;
+    background-color: rgb(238, 236, 236);
+    border: none;
+    border-radius: 16px;
+}
+.extrablock2
+{
+    position: relative;
+    width: 80%;
+    height: 300px;
+    margin: 40px auto;
+    background-color: rgb(255, 126, 20);
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.extrablock2 .imgbox
+{
+    position: relative;
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+}
+.extrablock2 .imgbox img
+{
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    top: 30px;
+    left: -30px;
+}
+.extrablock2 .info
+{
+    position: relative;
+    width: 400px;
+    display: grid;
+    align-content: center;
+}
+.extrablock2 .info h2
+{
+    position: relative;
+    margin: 10px 0;
+    font-size: 2.2rem;
+    line-height: 40px;
+    color: white;
+}
+.extrablock2 .info button
+{
+    position: relative;
+    width: 180px;
+    height: 50px;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+}
+.testimonials
+{
+    position: relative;
+    width: 100%;
+    height: 525px;
+    background-color: rgb(240, 238, 238);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-content: center;
+}
+.testimonials h1
+{
+    position: relative;
+    margin: 30px 0;
+    font-size: 2.5rem;
+    text-align: center;
+    display: grid;
+    grid-column: 1/5;
+}
+.testimonials .card
+{
+    position: relative;
+    width: 200px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+.testimonials .card .iconbox
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: -25px auto;
+    background-color: rgb(255, 126, 20);
+    border-radius: 35px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.testimonials .card .iconbox svg
+{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 12px;
+    left: 15px;
+    fill: white;
+}
+.testimonials .card h2
+{
+    position: relative;
+    margin: 10px auto;
+    margin-top: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.testimonials .card p
+{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    font-size: 1rem;
+    text-align: center;
+}
+.testimonials .card p span
+{
+    position: relative;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+.extrablock3
+{
+    position: relative;
+    width: 100%;
+    height: 625px;
+    background-color: lightseagreen;
+    background: url(assets/img7.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: grid;
+    align-content: center;
+}
+.extrablock3 h1
+{
+    position: relative;
+    width: 70%;
+    margin: 30px auto;
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 80px;
+    text-shadow: 2px 2px 15px rgba(0,0,0,.7);
+}
+.extrablock3 button
+{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 126, 20);
+    color: white;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 15px rgba(161, 73, 0, 0.671);
+}
+.contact
+{
+    position: relative;
+    width: 100%;
+    height: 625px;
+    padding: 30px 0;
+    color: black;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: flex-end;
+}
+.contact h1
+{
+    position: relative;
+    margin: 0px auto;
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 80px;
+    grid-column: 1/3;
+}
+.contact input[type="text"]
+{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid rgb(212, 210, 210);
+    border-radius: 25px;
+    font-size: 1.1rem;
+    padding: 0 20px;
+}
+.contact input[name="subject"]
+{
+    width: auto;
+    grid-column: 1/3;
+}
+.contact textarea
+{
+    position: relative;
+    width: auto;
+    height: 150px;
+    background-color: white;
+    border: 2px solid rgb(212, 210, 210);
+    border-radius: 10px;
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    grid-column: 1/3;
+}
+.contact button
+{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 126, 20);
+    color: white;
+    font-size: 1.1rem;
+    grid-column: 1/3;
+}
+.contact i
+{
+    position: relative;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:800px)
+{
+    header
+    {
+        height: 50px;
+        grid-template-columns: auto auto;
+    }
+    header .logo
+    {
+        position: relative;
+        padding: 0 10px;
+        font-size: 1.5rem;
+    }
+    header .menu
+    {
+        display: none;
+    }
+    .menu2
+    {
+        display: grid;
+        transition: .5s;
+    }
+    header .cart span
+    {
+        grid-template-columns: auto auto auto auto;
+    }
+    header .cart span .menubar
+    {
+        display: block;
+    }
+    .home
+    {
+        height: auto;
+        padding: 70px 0;
+        grid-template-columns: auto;
+        justify-content: unset;
+        align-content: flex-start;
+    }
+    .home .maincontent
+    {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .home .maincontent h1
+    {
+        margin: -10px 0;
+        font-size: 3rem;
+        line-height: 70px;
+    }
+    .home .maincontent p
+    {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .home .imgbox
+    {
+        position: relative;
+        width: 90%;
+        height: 400px;
+        margin: 20px auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .procesure
+    {
+        height: auto;
+        padding: 30px 0;
+        font-size: 2.5rem;
+        grid-gap: 50px;
+    }
+    .procesure .card
+    {
+        grid-column: 1/5;
+    }
+    .procesure .card h2
+    {
+        margin: 0px 0;
+        font-size: 1.5rem;
+    }
+    .procesure .card p
+    {
+        width: 90%;
+        font-size: 1.3rem;
+    }
+    .extrablock1
+    {
+        height: auto;
+        padding: 40px 0;
+        justify-content: unset;
+        overflow: hidden;
+    }
+    .extrablock1 .info
+    {
+        width: 80%;
+        margin: auto;
+        order: 1;
+        grid-column: 1/3;
+        justify-content: unset;
+    }
+    .extrablock1 .info h1
+    {
+        position: relative;
+        width: 100%;
+        font-size: 1.7rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .extrablock1 .info p
+    {   
+        position: relative;
+        font-size: 1.1rem;
+        margin: 20px auto;
+        color: grey;
+        text-align: center;
+    }
+    .extrablock1 .info button
+    {
+        margin: 0 auto;
+    }
+    .extrablock1 .imgbox
+    {   
+        width: 90%;
+        margin: 20px auto;
+        height: 350px;
+        grid-column: 1/3;
+    }
+    .ourmenu
+    {
+        padding: 40px 0;
+        justify-content: unset;
+        align-content: unset;
+    }
+    .ourmenu h1
+    {
+        font-size: 2rem;
+    }
+    .ourmenu .menucard
+    {
+        width: 90%;
+        margin: auto;
+        grid-column: 1/4;
+    }    
+    .ourmenu .menucard .imgbox
+    {
+        height: 350px;
+    }
+    .extrablock2
+    {
+        width: 90%;
+        height: auto;
+        grid-gap: 10px;
+        padding-bottom: 50px;
+    }
+    .extrablock2 .imgbox
+    {
+        position: relative;
+        width: 90%;
+        height: 300px;
+        margin: 20px auto;
+        grid-column: 1/3;
+    }
+    .extrablock2 .imgbox img
+    {
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .extrablock2 .info
+    {
+        width: 100%;
+        grid-column: 1/3;
+    }   
+    .extrablock2 .info h2
+    {
+        font-size: 1.8rem;
+        line-height: 35px;
+        text-align: center;
+    }
+    .extrablock2 .info button
+    {
+        position: relative;
+        width: 180px;
+        height: 40px;
+        margin: auto;
+        font-size: 1.1rem;
+        background-color: white;
+        border-radius: 20px;
+        border: none;
+    }
+    .testimonials
+    {
+        height: auto;
+        padding-bottom: 30px;
+        grid-gap: 70px;
+    }    
+    .testimonials h1
+    {
+        margin: 0;
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+    .testimonials .card
+    {
+        height: auto;
+        grid-column: 1/5;
+    }
+    .extrablock3
+    {
+        width: auto;
+        height: auto;
+        padding: 70px 0;
+    }
+    .extrablock3 h1
+    {
+        width: 90%;
+        font-size: 2.8rem;
+        line-height: 50px;
+    }
+    .contact
+    {
+        height: auto;
+        padding: 20px 0;
+        justify-content: unset;
+    }
+    .contact h1
+    {
+        font-size: 2.4rem;
+        line-height: 50px;
+    }
+    .contact input[type="text"]
+    {
+        width: 90%;
+        height: 40px;
+        margin: auto;
+        grid-column: 1/4;
+    }
+    .contact textarea
+    {
+        position: relative;
+        width: 97%;
+        height: 150px;
+        margin: 0 20px;
+        background-color: white;
+        border: 2px solid rgb(212, 210, 210);
+        border-radius: 10px;
+        font-size: 1.6rem;
+        padding: 10px 20px;
+        grid-column: 1/3;
+    }
+    .contact button
+    {
+        width: 150px;
+        height: 40px;
+        margin: auto;
+        grid-column: 1/4;
+    }
+}
